@@ -1,0 +1,37 @@
+[
+  {
+    "tipo": "Salud",
+    "ruc": "1790012345001",
+    "empresa": "Seguros Vida Sana",
+    "monto": 125.75,
+    "descripcion": "Pago de consulta médica general"
+  },
+  {
+    "tipo": "Alimentación",
+    "ruc": "0998765432001",
+    "empresa": "Supermaxi",
+    "monto": 65.90,
+    "descripcion": "Compra de víveres para la semana"
+  },
+  {
+    "tipo": "Educación",
+    "ruc": "1102233445001",
+    "empresa": "Instituto de Idiomas",
+    "monto": 300,
+    "descripcion": "Pago de curso de inglés avanzado"
+  },
+  {
+    "tipo": "Transporte",
+    "ruc": "0801122334001",
+    "empresa": "Taxi Ejecutivo S.A.",
+    "monto": 20.50,
+    "descripcion": "Transporte a cita médica"
+  },
+  {
+    "tipo": "Entretenimiento",
+    "ruc": "1009988776001",
+    "empresa": "Cinemark",
+    "monto": 18.00,
+    "descripcion": "Entrada al cine y combo de snacks"
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "partido": {
+    "fecha": "2025-07-01",
+    "hora": "19:30",
+    "estadio": "Estadio Nacional",
+    "equipo_local": "Club Deportivo Quito",
+    "equipo_visitante": "Barcelona SC",
+    "resultado": "2-2"
+  },
+  "alineaciones": {
+    "Club Deportivo Quito": [
+      { "nombre": "Juan Pérez", "posicion": "Portero", "numero": 1 },
+      { "nombre": "Carlos Gómez", "posicion": "Defensa", "numero": 4 },
+      { "nombre": "Luis Andrade", "posicion": "Delantero", "numero": 9 }
+    ],
+    "Barcelona SC": [
+      { "nombre": "Pedro Ramírez", "posicion": "Portero", "numero": 1 },
+      { "nombre": "José Quintero", "posicion": "Defensa", "numero": 5 },
+      { "nombre": "Andrés López", "posicion": "Delantero", "numero": 11 }
+    ]
+  },
+  "eventos": [
+    { "minuto": 12, "tipo": "gol", "jugador": "Luis Andrade", "equipo": "Club Deportivo Quito" },
+    { "minuto": 36, "tipo": "tarjeta amarilla", "jugador": "Carlos Gómez", "equipo": "Club Deportivo Quito" },
+    { "minuto": 54, "tipo": "gol", "jugador": "Andrés López", "equipo": "Barcelona SC" },
+    { "minuto": 85, "tipo": "gol", "jugador": "Luis Andrade", "equipo": "Club Deportivo Quito" },
+    { "minuto": 90, "tipo": "gol", "jugador": "José Quintero", "equipo": "Barcelona SC" }
+  ],
+  "estadisticas": {
+    "Club Deportivo Quito": {
+      "posesion": "48%",
+      "tiros_a_puerta": 6,
+      "faltas": 14,
+      "corners": 4
+    },
+    "Barcelona SC": {
+      "posesion": "52%",
+      "tiros_a_puerta": 7,
+      "faltas": 10,
+      "corners": 5
+    }
+  }
+}
