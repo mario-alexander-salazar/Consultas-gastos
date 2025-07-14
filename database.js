@@ -3,12 +3,14 @@ const fs = require('fs');
 const path = require('path');
 const Gasto = require('./data/gastos'); // Asegúrate de que el modelo esté bien definido
 
+// URI de conexión (¡entre comillas!)
+const URI = 'mongodb://atlas-sql-686e8649c0f71550b09879b0-pnvdmh.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin';
+
 // Conexión a MongoDB
-
-//mongoose.connect('mongodb://localhost:27017/consultasDT')
-
-const URI = mongodb://atlas-sql-686e8649c0f71550b09879b0-pnvdmh.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin
-
+mongoose.connect(URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 .then(async () => {
   console.log('✅ Conexión a MongoDB establecida');
 
@@ -30,4 +32,5 @@ const URI = mongodb://atlas-sql-686e8649c0f71550b09879b0-pnvdmh.a.query.mongodb.
 });
 
 module.exports = mongoose;
+
 
