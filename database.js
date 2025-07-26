@@ -4,7 +4,10 @@ const path = require('path');
 const Gasto = require('./data/gastos'); // Asegúrate de que el modelo esté bien definido
 
 // URI de conexión (¡entre comillas!)
-const URI = 'mongodb://atlas-sql-686e8649c0f71550b09879b0-pnvdmh.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin';
+//const URI = 'mongodb://atlas-sql-686e8649c0f71550b09879b0-pnvdmh.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin';
+
+const URI = 'mongodb://127.0.0.1:27017/gastos';
+
 
 // Conexión a MongoDB
 mongoose.connect(URI, {
