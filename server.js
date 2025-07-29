@@ -7,6 +7,8 @@ const app = express();
 // Conexión a la base de datos
 require('./database');
 
+const URI = 'mongodb+srv://msalazar:<CXaPc7Q8nPxVffMe>@cluster0.nce8d7z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
 // Middlewares
 app.use(morgan('dev'));
 app.use(express.json());

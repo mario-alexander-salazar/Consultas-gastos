@@ -1,1 +1,28 @@
-<p>facturas works!</p>
+<div class="bg-white p-6 shadow rounded">
+  <h2 class="text-2xl font-bold mb-4 text-blue-600">📋 Lista de Gastos</h2>
+
+  <div *ngIf="gastos.length === 0" class="text-gray-500">No hay datos disponibles.</div>
+
+  <table *ngIf="gastos.length > 0" class="table-auto w-full border-collapse border border-gray-300">
+    <thead class="bg-gray-200 text-left">
+    <tr>
+      <th class="px-4 py-2 border">Tipo</th>
+      <th class="px-4 py-2 border">Empresa</th>
+      <th class="px-4 py-2 border">RUC</th>
+      <th class="px-4 py-2 border">Monto</th>
+      <th class="px-4 py-2 border">Descripción</th>
+      <th class="px-4 py-2 border">Fecha</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let gasto of gastos" class="hover:bg-gray-50">
+      <td class="px-4 py-2 border">{{ gasto.tipo }}</td>
+      <td class="px-4 py-2 border">{{ gasto.empresa }}</td>
+      <td class="px-4 py-2 border">{{ gasto.ruc }}</td>
+      <td class="px-4 py-2 border text-right font-semibold text-green-600">$ {{ gasto.monto.toFixed(2) }}</td>
+      <td class="px-4 py-2 border">{{ gasto.descripcion }}</td>
+      <td class="px-4 py-2 border">{{ gasto.createdAt | date:'short' }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
